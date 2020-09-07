@@ -1,0 +1,1 @@
+This project will show my ability to understand basic HTML and CSS via building a small webpage.

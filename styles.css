@@ -1,0 +1,137 @@
+:root {
+    font-size: 10px;
+    font-family: arial, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+.navigation {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-nav, .right-nav{
+    line-height: 5rem;
+}
+
+#apps {
+    display: inline-block;
+    background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+    background-position-x: -132px;
+    background-position-y: -38px;
+    background-size: 528px 68px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    opacity: 0.55;
+}
+.right-nav button {
+    vertical-align: middle;
+    color: white;
+    font-weight: 900;
+    background-color: rgb(67, 135, 253);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0 1.2rem;
+    line-height: 2.8rem;
+    cursor: pointer;
+}
+.right-nav button:hover {
+    box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.15);
+}
+
+#logo {
+    width: 100vw;
+    height: 30vh;
+    background-image: url(https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    margin-bottom: 5rem;
+}
+#search{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    "searchbox searchbox"
+    "button1 button2";
+}
+#search-container {
+    grid-area: searchbox;
+    justify-self: center;
+    width: 46rem;
+    height: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 2.4rem;
+}
+
+#search-container:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+#search input[type="text"] {
+    line-height: 3.4rem;
+    width: 38.7rem;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-size: 1.6rem;
+}
+#search input[type="text"]:focus {
+    outline: none;
+}
+#submit {
+    grid-area: button1;
+    justify-self: right;
+}
+
+#lucky {
+    grid-area: button2;
+    justify-self: left;
+}
+
+.buttons {
+    background-color: #F2F2F2;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: rgb(95, 99, 104);
+    text-align: center;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 1.4rem;
+}
+.buttons:hover {
+    border: 1px solid #c6c6c6;
+    color: #222;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgb(242, 242, 242);
+}
